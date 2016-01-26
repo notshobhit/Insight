@@ -1,0 +1,308 @@
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color:#fff;
+    margin: 0;
+	background-color: #fff8f2;
+}
+
+div.nav-bar{
+	margin: auto;
+	height:50px;
+	width: 70%;
+	padding: 0px;
+	background-color: #ccc;
+	display: table;
+}
+
+div.nav-bar button{
+	display: table-row;
+	width:20%;
+	border-spacing: 0px;
+	height: 50px;
+	border: none;
+	color:#aaa;
+	font-size: 1.2em;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+	background-color: #ffe4b3;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transition: 0.4s;
+}
+
+
+div.nav-bar button:hover, div.nav-bar button[class="is-active"]{
+	background-color: #fff;
+	color: #000;
+}
+
+div.feed{
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding:40px 100px 50px 100px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: rgba(255,255,255,0.6);
+}
+
+p.postContent{
+	line-height: 150%;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.feedHead{
+	font-size:20px;
+    height:80px;
+    background-size:75px 75px;
+    box-sizing:border-box;
+    background-repeat:no-repeat;
+    width:100%;
+    margin-bottom:20px;
+    position:relative;
+}
+
+div.feedHead img{
+	width: 75px;
+	border-radius: 50% 50%;
+}
+
+a.userLinkToProfile{
+	position: relative;
+	display: inline-block;
+	color:inherit;
+	text-decoration: none;
+	transition:0.3s;
+}
+
+
+a.userLinkToProfile:hover{
+	color:#ff8000;
+	text-decoration: none;
+}
+
+a.userLinkToProfile:after{
+	position: relative;
+	top:3px;
+	content: "";
+	width:0%;
+	height:1px;
+	display: block;
+	margin: auto;
+	transition:0.5s;
+	background-color: #ff8000;
+}
+
+a.userLinkToProfile:hover:after{
+	width:100%;
+}
+
+div.feedHead p{
+	position: absolute;
+	top:3px;
+	left:90px;
+	line-height: 90%;
+}
+
+span.showTime{
+	font-size: 0.6em;
+	color: #c1c1c1;
+}
+
+
+/*div.feed:nth-child(2n){
+	background-color:#fff;
+}
+
+div.feed:nth-child(2n+1){
+	background-color:#deeaf6;
+}*/
+
+div.feedImage{
+    height:500px;
+    width:300px;
+    margin-bottom:5%;
+    margin-top:5%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+div.commentBox{
+	margin-top:30px;
+	width:90%;
+	padding:10px 20px;
+	border-radius:20px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #fff;
+}
+/*
+div.feed:nth-child(2n) div.commentBox{
+	background-color:#deeaf6;
+}
+ 
+div.feed:nth-child(2n+1) div.commentBox{
+	background-color:#ffffff;
+}
+*/
+div.commentBox table{
+	width:100%;
+}
+
+
+div.commentBox table tr td{
+	width:33%;
+	cursor:pointer;
+	transition:0.3s;
+	-webkit-transition:0.3s;
+	text-align:center;
+}
+
+td.like:hover{
+	color:#56ee09;
+}
+
+td.dislike:hover{
+	color:#ff0000;
+}
+
+td.share:hover{
+	color:#ff8000;
+}
+
+#commentArea{
+	width:100%;
+	font-size:16px;
+	resize:none;
+	outline:none;
+}
+
+
+div#comment{
+	margin:10px;	
+}
+
+div#commentBubble{
+	font-size:18px;
+}
+
+
+span#commentsList ul{
+	font-size:18px;
+	margin-left:-20px;
+	list-style-type:none;
+}
+
+span#commentsList ul li{
+	width:90%;
+	margin:10px 0px 10px 0px;
+}
+
+div#overlay{
+	display:none;
+	position:fixed;
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	background-color:black;
+	opacity:.8;
+    z-index:5;
+}
+
+div#searchMain{
+    position:fixed;
+    top:200px;
+    left:30%;
+    background-color:#ff8200;
+    width:450px;
+    height:50px;
+    display:none;
+    text-align:center;
+    border-radius:20px;
+    padding:20px 25px 10px 25px;
+    z-index:6;
+}
+
+div#searchMain input {
+    width:100%;
+    height:30px;
+    font-size:20px;
+    border:3px solid #ddd;
+    -webkit-transition:0.3s;
+    transition:0.3s;
+}
+
+div#searchMain input:focus {
+    outline:none;
+    border:3px solid #858585;
+}
+
+div#updatePost{
+	position: fixed;
+	left:25%;
+	top:20%;
+	display:none;
+   	z-index: 20;
+	background-color: #ffb475;
+	padding:20px;
+}
+
+div#updatePost textarea{
+	box-sizing: border-box;
+	resize:none;
+	outline: none;
+	background-color: #fff;
+	border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+div#updatePost button{
+	width:25%;
+	font-size: 1em;
+	background-color: #ff8000;
+	border:none;
+	color: #fff;
+	padding:10px;
+}
+
+div#updatePost input[type="checkbox"]{
+}
+
+div#noPosts{
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: 50% 80%;
+	text-align: center;
+	padding: 30px;
+}
+
+@media screen and (max-width: 1000px){
+	
+	div.feed{
+        width: 95%;
+		padding-left: 40px;
+		padding-right: 40px;
+    }
+
+	div.commentBox{
+		width: 95%;
+	}
+
+}
+
+

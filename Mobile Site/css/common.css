@@ -1,0 +1,78 @@
+body{
+	margin:0;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	-webkit-font-family: 'Lato', sans-serif;
+}
+
+header{
+	width: 100%;
+	height:80px;
+	background-color: rgb(255, 80, 0);
+	background-image: url('../../Images/TranspBack.gif');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 208px 60px;
+}
+
+div.postsMain{
+	position: relative;
+	margin: auto;
+	margin-top: 0px;
+	width:100%;
+	padding-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin-top: 10px;
+}
+
+div.likeSide{
+	position:absolute;
+	top:0;
+	left:0;
+	width:0px;
+	height:100%;
+	background-color: #e74444;
+	transition: 0.4s;
+	background-image: url('../img/heart_heart_png_web_icon_png_like_icon_heart_icon.png');
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: 50% 50%;
+	color:#fff;
+}
+
+div.likesNumber{
+	position: relative;
+	font-size: 0.7em;
+	bottom: -5%;
+}
+
+
+div.postsHead{
+	width:100%;
+	height: 60px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+div.postsHead img{
+	position: relative;
+	left:-10px;
+	width:40px;
+	height:40px;
+	border-radius: 50% 50%;
+}
+
+
+div.postsHead p{
+	display: inline-block;
+	position: relative;
+	top:-12px;
+	font-size: 1.2em;
+}
+
+p.postContent{
+	margin: auto;
+	line-height: 21px;
+	width:80%;
+}

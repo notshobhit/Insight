@@ -1,0 +1,283 @@
+
+body{
+	background-color:#fff;
+}
+
+#header {
+    position:fixed;
+	height:200px;
+	text-align:center;
+	background-color:#ff8000;
+	background-image: url('../Images/logo3.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	top:0;
+    left:0;
+    width:100%;
+    transition:0.3s;
+    -webkit-transition:0.3s;
+	z-index:-1;
+}
+
+#main {
+	position:absolute;
+	top:210px;
+	left:0;
+	width:100%;
+	z-index:0;
+	background-color:#ffffff;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 200;
+} 
+
+#login {
+	width:100%;
+	border-radius:30px;
+	height:320px;
+	float:left;
+	opacity:1;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	font-size:150%;
+	color:#000000;
+	display:table;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+    cursor:pointer;
+}
+
+#shadow1{
+	margin-top:60px;
+    width:44%;
+	height:320px;
+	background-color:#000000;
+	border-radius:30px;
+	display:inline-block;
+	margin-left:4%;
+	cursor:pointer;
+}
+
+#signup {
+	width:100%;
+	border-radius:30px;
+	height:320px;
+	float:right;
+	opacity:1;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+    font-size:150%;
+	display:table;
+	color:#000000;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+    cursor:pointer;
+}
+
+#signup:hover {
+	opacity:.4;
+	background-size:105% 105%;
+}
+
+#login:hover{
+	opacity:.4;
+	background-size:105% 105%;
+}
+
+#divp {
+	width:25%;
+	border-radius:50% 50%;
+	text-align:center;
+	color:#ffffff;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+
+a#linkup{
+    outline:none;
+}
+
+a#linkup:hover{
+    outline:none;
+}
+
+a#linkup:active{
+    outline:none;
+}
+
+a#linkup:focus {
+    outline:none;
+}
+
+
+
+
+
+#overlay{
+	display:none;
+	position:fixed;
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	background-color:black;
+	opacity:.8;
+	z-index:2;
+}
+
+
+
+
+
+	
+#loginMain {
+	position:fixed;
+	top:25%;
+	left:37%;
+	border:1px solid black;
+	border-radius:50px;
+	padding:20px;
+	width:25%;
+	display:none;
+	text-align:center;
+	background-color:#ffffff;
+	z-index:3;
+}
+
+#text{
+    font-size:120%;
+}
+
+.textbox{
+	width:80%;
+	height:6%;
+	border:5px solid #dcdcdc;
+	font-size:100%;
+	padding:10px;	
+	-webkit-transition:0.3s;
+	transition:0.3s;
+	margin-top:5px;
+}
+
+.textbox:focus{
+	outline:none;
+	box-shadow:0 0 5px 1px #969696;
+	border:5px solid #707070;
+}
+
+#button, #buttonBack1, #buttonBack2{
+	width:25%;
+	margin-top:15px;
+	border:2px solid #dcdcdc;
+	background-color:#ffffff;
+	transition:0.3s;
+	-webkit-transition:0.3s;
+}
+
+#button:focus, #buttonBack1:focus, #buttonBack2:focus{
+	outline:none;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	background-color:#ff8000;
+}
+
+
+
+
+
+
+#signUpMain {
+	position:fixed;
+	top:25%;
+	left:37%;
+	border-radius:50px;
+	background:#ffffff;
+	padding:10px;
+	width:25%;
+	text-align:center;
+	display:none;
+	z-index:3;
+}
+
+.buttonSignUp {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	width:40%;
+	font-size:20px;
+	margin-top:15px;
+	height:10%;
+	border:2px solid #dcdcdc;
+	background-color:#ffffff;
+	-webkit-transition:0.3s;
+	transition:0.3s;
+}
+
+.buttonSignUp:focus{
+	outline:none;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	background-color:#ff8000;
+}
+
+div#subdiv{
+	border-top:1px solid black;
+	width:95%;
+	height:20%;
+	padding:1%;
+	margin-top:6%;
+}
+
+div#aboutSect{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	width:100%;
+	background-color:#ffffff;
+	color:#ff8000;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:5px 200px 40px 200px; 
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align:center;
+	font-size:1.5em;
+	opacity:0;
+	transition:0.5s;
+	-webkit-transition:0.5s;
+}
+
+div#footer{
+	width:100%;
+	background-color:#ff8000;
+	padding-top:60px;
+	height:200px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align:center;
+}
+
+img#footerImage{
+	opacity:0;
+	transition:1s;
+	-webkit-transition:1s;
+}
+
+
+@media screen and (max-width: 1200px){
+	#header{
+		height: 100px;
+		background-size: 320px 90px;
+		background-position: 50% 50%;
+	}
+
+	#main{
+		top:100px;
+	}
+
+	#login, #signup, #shadow1{
+		height: 200px;
+	}
+}

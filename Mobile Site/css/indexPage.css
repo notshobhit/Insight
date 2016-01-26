@@ -1,0 +1,35 @@
+body{
+	background-color: #ffedde;
+}
+
+
+input.loginInput{
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	width:80%;
+	border-bottom: 1px solid #fff;
+	padding-left: 10px;
+	outline: none;
+	transition:0.3s;
+	font-size: 15px;
+}
+
+input.loginInput:focus{
+	border-bottom: 1px solid #ddd;
+}
+
+.indexButton{
+	/*     FOR SAFARI: First two are webkit   */
+	-webkit-appearance: none;
+	-webkit-border-radius:0px;
+	width:30%;
+	background-color: #ff8000;
+	border:none;
+	color: #fff;
+	padding:10px;
+}
+
+hr{
+	background-color: #000;
+}
